@@ -1,7 +1,7 @@
 import React from 'react';
 import Nav from '../nav/Nav'
 
-const Button = ({ children }) => (
+const Button = () => (
   <>
       <h1>button</h1>
   </>

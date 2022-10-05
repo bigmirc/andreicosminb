@@ -1,4 +1,18 @@
-.websiteLayout {
-  padding: 0;
+body{
   margin: 0;
+  padding: 0;
+}
+
+:root {
+  --green900: #02283B;
+  --green500: #88AAAA;
+  --green100:  #D8E1E2;
+  --orange900: #E88F15;
+  --orange500: #FF9F1C;
+  --orange100: #EAC99C;
+  --blue50: #E3F2FD;
+  --grey700: #D6D6D6;
+  --grey500: #EDEEEF;
+  --grey300: #F4F4F4;
+  --white: #fff;
 }

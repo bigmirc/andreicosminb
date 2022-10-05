@@ -6,7 +6,7 @@ const Layout = ({ children }) => (
     <div>
       <Nav />
       <div>
-      {children}
+        {children}
       </div>
     </div>
   </>
