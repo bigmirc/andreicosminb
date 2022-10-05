@@ -1,0 +1,56 @@
+@font-face {
+  font-family: 'Bernhard';
+  src: local('Bernhard Roman'), local('Bernhard-Roman'),
+  url('../../assets/fonts/BernhardModernStd-Roman.woff') format('truetype');
+  font-display: swap;
+}
+
+.wrapper{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.pwrapper{
+  margin-left: 5%;
+  width: 60%;
+}
+
+.container{
+  background: var(--black);
+  min-height: 100vh;
+}
+
+.p{
+  color: var(--white);
+  font-size: 36px;
+}
+
+.p:first-child{
+  margin-bottom: 36px;
+}
+
+.title{
+  margin-left: 5%;
+  font-size: 256px;
+  font-family: Bernhard;
+  color: var(--green);
+}
+
+.cosminacho{
+  padding-right: 5%;
+}
+
+.cosminacho img {
+  width: 350px;
+  height: 350px;
+  overflow: hidden;
+  border-radius: 50%;
+  transition: ease-in-out 1s;
+}
+
+.cosminacho img:hover{
+  transform: rotate(35deg);
+  transition: ease-in-out 1s;
+}
+
