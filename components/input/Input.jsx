@@ -1,7 +1,6 @@
 import React from 'react';
-import Nav from '../nav/Nav'
 
-const Input = ({ children }) => (
+const Input = () => (
   <>
       <h1>input</h1>
   </>
