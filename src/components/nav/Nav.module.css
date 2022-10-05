@@ -7,7 +7,26 @@
   }
 }
 
+.container{
+  position: absolute;
+  right: 60px;
+  top: 0px;
+}
+
+.container ul{
+  margin: 0;
+  list-style: none;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: flex-end;
+  gap: 50px;
+}
+
+.container ul li{
+  cursor: pointer;
+}
+
 .linkActive {
-  font-weight: bold;
-  color: var(--orange900);
+  color: var(--green);
 }

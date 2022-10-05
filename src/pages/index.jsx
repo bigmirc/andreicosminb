@@ -1,9 +1,16 @@
 import Head from 'next/head';
+import styles from '../styles/Home.module.css'
 
 export default function Home() {
   return (
     <>
-      <h1>hom</h1>
+    <div className={styles.container}>
+        <div className={styles.andrei}>Andrei</div>
+        <div className={styles.cosmin}>Cosmin</div>
+        <div className={styles.bala}>Bălă</div>
+        <div className={styles.graphic}>Graphic</div>
+        <div className={styles.designer}>Designer</div>
+    </div>
     </>
   );
 }

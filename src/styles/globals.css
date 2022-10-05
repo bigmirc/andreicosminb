@@ -1,18 +1,18 @@
 body {
   margin: 0;
   padding: 0;
+  font-family: Telegraf;
 }
 
+@font-face {
+  font-family: 'Telegraf';
+  src: local('Telegraf Regular'), local('Telegraf-Regular'),
+  url('../assets/fonts/Telegraf-Regular.woff') format('truetype');
+  font-display: swap;
+}
 :root {
-  --green900: #02283b;
-  --green500: #88aaaa;
-  --green100: #d8e1e2;
-  --orange900: #e88f15;
-  --orange500: #ff9f1c;
-  --orange100: #eac99c;
-  --blue50: #e3f2fd;
-  --grey700: #d6d6d6;
-  --grey500: #edeeef;
-  --grey300: #f4f4f4;
+  --gray: #C9C9C9;
+  --green: #C4FF00;
+  --black: #0E0E0E;
   --white: #fff;
 }
