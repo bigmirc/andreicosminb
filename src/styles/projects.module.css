@@ -1,0 +1,9 @@
+.projectsContainer {
+  background-color: red;
+  height: 300px;
+}
+
+.project {
+  height: 30px;
+  background-color: red;
+}
