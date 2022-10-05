@@ -1,0 +1,30 @@
+.container{
+  background: var(--gray);
+  min-height: 100vh;
+}
+
+.andrei, .cosmin, .bala, .graphic, .designer{
+  font-size: 140px;
+  line-height: 130px;
+}
+
+.andrei{
+  margin-left: 10%;
+}
+
+.cosmin{
+  margin-left: 20%;
+}
+
+.bala{
+  margin-left: 40%;
+  margin-bottom: 50px;
+}
+
+.graphic{
+  margin-left: 40%;
+}
+
+.designer{
+  margin-left: 50%;
+}

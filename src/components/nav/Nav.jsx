@@ -25,7 +25,7 @@ const links = [
 const Nav = () => {
   const router = useRouter();
   return (
-    <div>
+    <div className={style.container}>
       <ul>
         {links.map((link, i) => (
           <li key={i}>
