@@ -1,0 +1,13 @@
+.link {
+  font-size: 23px;
+  font-weight: 400;
+  line-height: 19px;
+  @media (max-width: 767px) {
+    font-size: 16px;
+  }
+}
+
+.linkActive {
+  font-weight: bold;
+  color: var(--orange900);
+}
