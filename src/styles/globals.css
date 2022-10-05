@@ -1,0 +1,18 @@
+body {
+  margin: 0;
+  padding: 0;
+}
+
+:root {
+  --green900: #02283b;
+  --green500: #88aaaa;
+  --green100: #d8e1e2;
+  --orange900: #e88f15;
+  --orange500: #ff9f1c;
+  --orange100: #eac99c;
+  --blue50: #e3f2fd;
+  --grey700: #d6d6d6;
+  --grey500: #edeeef;
+  --grey300: #f4f4f4;
+  --white: #fff;
+}
