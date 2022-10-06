@@ -1,5 +1,5 @@
 import React from 'react';
-import { Project } from '../../components/project/Project';
+import Project from '../../components/project/Project';
 import projects from '../../utils/projects';
 import styles from './work.module.css';
 
