@@ -35,48 +35,62 @@ return (
         <title>Cosminachio About</title>
       </Head>
       <div className={styles.container}>
-        <div className={styles.left}>
-          <div className={styles.title}>CONTACT</div>
-          <div className={styles.text}>
-            <div>salut@bacosmin.work</div>
-            <div>+40 741 956 599</div>
+      <div className={styles.title}>CONTACT</div>
+      <div className={styles.textContainer}>
+          <div className={styles.left}>
+            
+            <div className={styles.text}>
+              <div>salut@bacosmin.work</div>
+              <div>+40 741 956 599</div>
+            </div>
+            <div className={styles.divider}></div>
+            <div className={styles.text}>
+              <div>behance.net/andreibcosmin</div>
+              <div>instagram.com/andreicosminb</div>
+            </div>
           </div>
-          <div className={styles.divider}></div>
-          <div className={styles.text}>
-            <div>behance.net/andreibcosmin</div>
-            <div>instagram.com/andreicosminb</div>
+          <div className={styles.right}>
+            <form method="post" onSubmit={handleSubmit}>
+              <div className={styles.inputWrapper}>
+              <label for="name">Name</label>
+              <input
+                className={styles.input}
+                type="text"
+                value={name}
+                id="name"
+                name="name"
+                
+                onChange={handleChange}
+              />
+              </div>
+              <div className={styles.inputWrapper}>
+              <label for="email">Email</label>
+              <input
+                className={styles.input}
+                type="text"
+                value={email}
+                id="email"
+                name="email"
+                
+                onChange={handleChange}
+              />
+              </div>
+            <div className={styles.textareaWrapper}>
+              <label>Cute Message</label>
+              <textarea
+                value={message}
+               
+                onChange={handleChange}
+                name="message"
+              />
+            </div>
+              <div className={styles.button}>
+                <button>Send</button>
+              </div>
+
+            </form>
           </div>
-        </div>
-        <div className={styles.right}>
-          <form method="post" onSubmit={handleSubmit}>
-            <label for="name">name</label>
-            <input
-              type="text"
-              value={name}
-              id="name"
-              name="name"
-              placeholder="name"
-              onChange={handleChange}
-            />
-            <label for="email">email</label>
-            <input
-              type="text"
-              value={email}
-              id="email"
-              name="email"
-              placeholder="email"
-              onChange={handleChange}
-            />
-            <label>Message</label>
-            <textarea
-              value={message}
-              placeholder="message"
-              onChange={handleChange}
-              name="message"
-            />
-            <button>Send</button>
-          </form>
-        </div>
+      </div>
       </div>
     </>
   );
