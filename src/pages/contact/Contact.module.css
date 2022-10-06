@@ -1,0 +1,36 @@
+.divider {
+  background-color: var(--green);
+  width: 200px;
+  height: 2px;
+}
+
+.left{
+  width: 45vw;
+  height: 60vh;
+}
+
+.container {
+  margin-left: 5%;
+  margin-top: 100px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.title{
+  font-size: 168px;
+  font-family: Bernhard;
+  color: var(--green);
+}
+
+.text{
+  line-height: 60px;
+  color: var(--white);
+  font-size: 48px;
+}
+
+.right{
+  color: aquamarine;
+  width: 45vw;
+  height: 60vh;
+}
