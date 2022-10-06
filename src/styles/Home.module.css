@@ -1,31 +1,42 @@
-.container{
+.container,
+.containerMobile {
   background: var(--gray);
-  min-height: 100vh;
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
 }
 
-.andrei, .cosmin, .bala, .graphic, .designer{
+.container {
   font-size: 140px;
-  line-height: 130px;
 }
 
-.andrei{
-  padding-top: 30px;
-  margin-left: 4%;
+.containerMobile {
+  font-size: 88px;
+  align-items: flex-start;
+  gap: 8px;
 }
 
-.cosmin{
-  margin-left: 12%;
+
+.andrei {
+  margin-left: 1%;
 }
 
-.bala{
-  margin-left: 34%;
-  margin-bottom: 40px;
+.cosmin {
+  margin-left: 15%;
 }
 
-.graphic{
-  margin-left: 50%;
+.bala {
+  align-self: center;
 }
 
-.designer{
-  margin-left: 58%;
+.graphic {
+  align-self: flex-end;
+  margin-right: 18%;
+
+}
+
+.designer {
+  align-self: flex-end;
+  margin-right: 1%;
 }
