@@ -11,7 +11,7 @@ export const Project = ({ project }) => {
       <div className={styles.projectImg}>
         <Image layout="responsive" alt="hi" src={b}></Image>
       </div>
-      <Link href="contact">
+      <Link href={`/work/${project.id}`}>
         <a className={styles.projectButton}>Full Project</a>
       </Link>
     </div>
