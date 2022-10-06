@@ -4,3 +4,8 @@
   display: flex;
   flex-wrap: wrap;
 }
+
+.projectContainer {
+  margin-top: 100px;
+  color: white;
+}
