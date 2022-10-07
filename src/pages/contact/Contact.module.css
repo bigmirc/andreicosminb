@@ -1,4 +1,4 @@
-.divider, 
+.divider,
 .dividerMobile {
   margin: 30px 0;
 }
@@ -15,35 +15,33 @@
   justify-content: center;
 }
 
-.buttonStyle, .buttonStyleMobile{
+.buttonStyle,
+.buttonStyleMobile {
   text-decoration: none;
   font-size: 24px;
   color: var(--black);
   border-radius: 26px;
   border: 1px solid white;
-  padding:40px 64px 32px;
+  padding: 40px 64px 32px;
 }
 
-.buttonStyleMobile{
-  padding:20px 32px 16px;
+.buttonStyleMobile {
+  padding: 20px 32px 16px;
 }
 
-.leftMobile{
-  width: 90%;
+.leftMobile {
+  width: 100%;
   padding-bottom: 50px;
   display: flex;
   margin-top: 30px;
-}
-
-.leftMobile{
-  width: 90%;
-  padding-bottom: 50px;
+  justify-content: space-evenly;
 }
 
 .container {
+  width: 100%;
   min-height: 100vh;
   background: var(--black);
-  padding-left: 5%;
+  padding: 0 32px;
   display: flex;
   flex-direction: column;
   justify-content: space-around;
@@ -53,9 +51,10 @@
   display: flex;
 }
 
-.textContainerMobile{
+.textContainerMobile {
   display: flex;
   flex-direction: column;
+  align-items: center;
 }
 
 .inputWrapper {
@@ -116,14 +115,15 @@
   color: var(--white);
 }
 
-.title, .titleMobile {
+.title,
+.titleMobile {
   font-size: 186px;
   color: var(--green);
 }
 
 .titleMobile {
   margin-top: 100px;
-  font-size: 80px;
+  font-size: 72px;
 }
 
 .text a {
@@ -133,17 +133,15 @@
   text-decoration: none;
 }
 
-.text{
+.text {
   padding-bottom: 64px;
 }
 
 .textMobile a {
-  line-height: 30px;
   color: var(--white);
-  font-size: 24px;
+  font-size: 16px;
   text-decoration: none;
 }
-
 
 .right {
   color: var(--white);
@@ -153,17 +151,17 @@
   flex-direction: column;
 }
 
-.rightMobile{
+.rightMobile {
   color: var(--white);
   width: 90%;
   display: flex;
   flex-direction: column;
 }
 
-.button .buttonStyle{
+.button .buttonStyle {
   background: var(--green);
   border: none;
-  padding:20px 32px 16px;
+  padding: 20px 32px 16px;
 }
 
 .button {
