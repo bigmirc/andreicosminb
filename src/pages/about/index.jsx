@@ -2,16 +2,21 @@ import React from 'react';
 import Head from 'next/head';
 import styles from './About.module.css';
 import Image from 'next/image';
+import dynamic from 'next/dynamic';
+import useIsMobile from '../../hooks/useIsMobile';
 
 const About = () => {
+  const { isMobile } = useIsMobile();
   return (
     <>
       <Head>
-        <title>Cosminachio About</title>
+        <title>About</title>
       </Head>
       <div className={styles.container}>
-        <div className={styles.title}>ABOUT</div>
-        <div className={styles.wrapper}>
+        <div className={isMobile ? styles.titleMobile : styles.title}>
+          ABOUT
+        </div>
+        <div className={isMobile ? styles.wrapperMobile : styles.wrapper}>
           <div className={styles.pwrapper}>
             <div className={styles.p}>
               Hello! My name is Cosmin and I am a curious graphic designer based
@@ -25,9 +30,11 @@ const About = () => {
               and editorial design.
             </div>
           </div>
-          <div className={styles.cosminacho}>
+          <div
+            className={isMobile ? styles.cosminachoMobile : styles.cosminacho}
+          >
             <Image
-              src={'/images/cosmin.jpeg'}
+              src={'/images/cosminacho.jpeg'}
               width="300px"
               height="300px"
               layout="responsive"
@@ -40,4 +47,6 @@ const About = () => {
   );
 };
 
-export default About;
+export default dynamic(() => Promise.resolve(About), {
+  ssr: false,
+});

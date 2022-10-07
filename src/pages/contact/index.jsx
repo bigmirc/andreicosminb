@@ -14,31 +14,29 @@ const Contact = () => {
   const handleChange = (e) =>
     setValues({ ...values, [e.target.name]: e.target.value });
 
-  const handleSubmit  = async (e) =>{
-    e.preventDefault()
-    try{
+  const handleSubmit = async (e) => {
+    e.preventDefault();
+    try {
       await fetch('http://localhost:3000/api/contact', {
-        method: "POST",
-        headers:{
-          "Content-Type":"application/json"
+        method: 'POST',
+        headers: {
+          'Content-Type': 'application/json',
         },
-        body: JSON.stringify(values)
-      })
+        body: JSON.stringify(values),
+      });
+    } catch (err) {
+      console.log(err);
     }
-    catch (err){
-        console.log(err);
-    }
-  }  
-return (
+  };
+  return (
     <>
       <Head>
-        <title>Cosminachio About</title>
+        <title>Contact</title>
       </Head>
       <div className={styles.container}>
-      <div className={styles.title}>CONTACT</div>
-      <div className={styles.textContainer}>
+        <div className={styles.title}>CONTACT</div>
+        <div className={styles.textContainer}>
           <div className={styles.left}>
-            
             <div className={styles.text}>
               <div>salut@bacosmin.work</div>
               <div>+40 741 956 599</div>
@@ -52,45 +50,41 @@ return (
           <div className={styles.right}>
             <form method="post" onSubmit={handleSubmit}>
               <div className={styles.inputWrapper}>
-              <label for="name">Name</label>
-              <input
-                className={styles.input}
-                type="text"
-                value={name}
-                id="name"
-                name="name"
-                
-                onChange={handleChange}
-              />
+                <label for="name">Name</label>
+                <input
+                  className={styles.input}
+                  type="text"
+                  value={name}
+                  id="name"
+                  name="name"
+                  onChange={handleChange}
+                />
               </div>
               <div className={styles.inputWrapper}>
-              <label for="email">Email</label>
-              <input
-                className={styles.input}
-                type="text"
-                value={email}
-                id="email"
-                name="email"
-                
-                onChange={handleChange}
-              />
+                <label for="email">Email</label>
+                <input
+                  className={styles.input}
+                  type="text"
+                  value={email}
+                  id="email"
+                  name="email"
+                  onChange={handleChange}
+                />
               </div>
-            <div className={styles.textareaWrapper}>
-              <label>Cute Message</label>
-              <textarea
-                value={message}
-               
-                onChange={handleChange}
-                name="message"
-              />
-            </div>
+              <div className={styles.textareaWrapper}>
+                <label>Cute Message</label>
+                <textarea
+                  value={message}
+                  onChange={handleChange}
+                  name="message"
+                />
+              </div>
               <div className={styles.button}>
                 <button>Send</button>
               </div>
-
             </form>
           </div>
-      </div>
+        </div>
       </div>
     </>
   );
