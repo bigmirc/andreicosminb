@@ -1,21 +1,34 @@
 const projects = [
   {
     id: '0',
+    year: '2020-2021',
+    kind: 'Open Call',
     name: 'Impas',
     type: 'Type Design',
     description:
       'Impas is a high-contrast display typeface with two stylistic versions, Impas Display and Impas Cut. It was created as a national typeface for Romania’s visual identity. As a visual and cultural landmark I had Constantin Brâncuși, a famous romanian artist and sculptor known internationally.',
   },
-  { id: '1', name: 'Castelul de Apă', type: 'Branding', description: '' },
+  {
+    id: '1',
+    year: 2012,
+    kind: 'Open Call',
+    name: 'Castelul de Apă',
+    type: 'Branding',
+    description: '',
+  },
   {
     id: '2',
+    year: '2020',
     name: 'Shapes',
+    kind: 'Open Call',
     type: 'Branding',
     description:
       'The brief was to come up with a visual identity for a chosen imaginary brand. I came up with SHAPES, a fully eco-friendly, modern and sustainable architecture company that uses sustainable materials in order to provide and create usable long-term spaces. I wanted to provide  a coherent and bold identity, and the logo concept started from a two- point perspective cube cut in different ways in order to get various shapes which makes you think of the different forms from architecture.  I used a strong RGB green for the idea of sustainability. Minimalistic, strict, clean with powerful colors, SHAPES stands for the future. Its purpose is to be focused on digital channels and ultimately to be flexible. A brand’s visual identity that is very strong and powerful in order to stand out in today’s world-where everything demands audience attention.',
   },
   {
     id: '3',
+    year: '2021',
+    kind: 'Open Call',
     name: 'TypeStation',
     type: 'UX/UI',
     description:
@@ -23,6 +36,8 @@ const projects = [
   },
   {
     id: '4',
+    year: '2019',
+    kind: 'Open Call',
     name: 'Eric Gill Short Book',
     type: 'Editorial',
     description:
@@ -30,6 +45,8 @@ const projects = [
   },
   {
     id: '5',
+    year: '2019',
+    kind: 'Open Call',
     name: 'Ambiant',
     type: 'Editorial',
     description:
@@ -37,6 +54,8 @@ const projects = [
   },
   {
     id: '6',
+    year: '2020',
+    kind: 'Open Call',
     name: 'Bucharest Buildings Pictograms',
     type: 'Pictograms and Systems',
     description:

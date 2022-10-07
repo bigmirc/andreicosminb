@@ -1,7 +1,6 @@
 .project {
   flex: 40%;
   padding: 24px 24px 40px;
-  background-color: var(--black);
   color: white;
   margin-bottom: 48px;
 }
@@ -9,7 +8,7 @@
 .divider {
   background-color: var(--green);
   width: 100%;
-  height: 2px;
+  height: 1px;
 }
 
 .projectType {
@@ -27,5 +26,5 @@
   color: white;
   border-radius: 26px;
   border: 1px solid white;
-  padding: 8px 16px;
+  padding: 10px 16px 8px;
 }

@@ -12,11 +12,19 @@
 }
 
 .containerMobile {
-  font-size: 88px;
+  font-size: 76px;
   align-items: flex-start;
   gap: 8px;
 }
 
+.andrei .cosmin .bala .graphic .designer {
+  transition: transform 0.2s;
+}
+.andrei:hover .cosmin:hover .bala:hover .graphic:hover .designer:hover {
+  transform: scale(
+    1.2
+  ); 
+}
 
 .andrei {
   margin-left: 1%;
@@ -33,7 +41,6 @@
 .graphic {
   align-self: flex-end;
   margin-right: 18%;
-
 }
 
 .designer {
