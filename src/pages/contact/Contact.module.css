@@ -5,7 +5,7 @@
   margin: 30px 0;
 }
 
-.left{
+.left {
   width: 45vw;
   height: 60vh;
 }
@@ -19,16 +19,16 @@
   justify-content: space-around;
 }
 
-.textContainer{
+.textContainer {
   display: flex;
 }
 
-.inputWrapper{
+.inputWrapper {
   display: flex;
   align-items: center;
 }
 
-.input{
+.input {
   background: transparent;
   border-radius: 20px;
   border: 1px solid var(--white);
@@ -38,36 +38,36 @@
   color: var(--white);
 }
 
-.inputWrapper label{
+.inputWrapper label {
   font-size: 24px;
 }
 
-.inputWrapper:first-child{
-    margin: 0 0 30px 0;
-}
-
-.inputWrapper:nth-child(2){
+.inputWrapper:first-child {
   margin: 0 0 30px 0;
 }
-.input::placeholder{
+
+.inputWrapper:nth-child(2) {
+  margin: 0 0 30px 0;
+}
+.input::placeholder {
   color: var(--white);
   margin-right: 5px;
 }
 
-.inputWrapper label{
+.inputWrapper label {
   padding-right: 10px;
 }
 
-.textareaWrapper{
+.textareaWrapper {
   font-size: 24px;
   display: flex;
   flex-direction: column;
   width: 100%;
 }
 
-.textareaWrapper textarea{
+.textareaWrapper textarea {
   color: var(--white);
-  margin: 10px 0 30px 0 ;
+  margin: 10px 0 30px 0;
   height: 25vh;
   background: transparent;
   border-radius: 15px;
@@ -77,24 +77,23 @@
   resize: none;
 }
 
-.textareaWrapper textarea::placeholder{
+.textareaWrapper textarea::placeholder {
   color: var(--white);
 }
 
-
-.title{
+.title {
   font-size: 216px;
   font-family: Bernhard;
   color: var(--green);
 }
 
-.text{
+.text {
   line-height: 40px;
   color: var(--white);
   font-size: 32px;
 }
 
-.right{
+.right {
   color: var(--white);
   width: 45vw;
   height: 60vh;
@@ -102,7 +101,7 @@
   flex-direction: column;
 }
 
-.button button{
+.button button {
   background: var(--green);
   border-radius: 15px;
   width: 150px;
@@ -110,8 +109,7 @@
   font-weight: 600;
 }
 
-.button{
-  
+.button {
   display: flex;
-  justify-content: end;
+  justify-content: flex-end;
 }
