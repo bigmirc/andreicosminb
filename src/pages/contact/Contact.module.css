@@ -1,13 +1,23 @@
-.divider {
+.divider, 
+.dividerMobile {
   background-color: var(--green);
   width: 200px;
   height: 2px;
   margin: 30px 0;
 }
 
+.dividerMobile {
+  margin: 10px 0;
+}
+
 .left {
   width: 45vw;
   height: 60vh;
+}
+
+.leftMobile{
+  width: 90%;
+  padding-bottom: 50px;
 }
 
 .container {
@@ -21,6 +31,11 @@
 
 .textContainer {
   display: flex;
+}
+
+.textContainerMobile{
+  display: flex;
+  flex-direction: column;
 }
 
 .inputWrapper {
@@ -81,22 +96,42 @@
   color: var(--white);
 }
 
-.title {
+.title, .titleMobile {
   font-size: 216px;
-  font-family: Bernhard;
   color: var(--green);
 }
 
-.text {
+.titleMobile {
+  margin-top: 100px;
+  font-size: 80px;
+}
+
+.text a {
   line-height: 40px;
   color: var(--white);
   font-size: 32px;
+  text-decoration: none;
 }
+
+.textMobile a {
+  line-height: 30px;
+  color: var(--white);
+  font-size: 24px;
+  text-decoration: none;
+}
+
 
 .right {
   color: var(--white);
   width: 45vw;
   height: 60vh;
+  display: flex;
+  flex-direction: column;
+}
+
+.rightMobile{
+  color: var(--white);
+  width: 90%;
   display: flex;
   flex-direction: column;
 }

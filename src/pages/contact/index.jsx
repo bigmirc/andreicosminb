@@ -2,6 +2,9 @@ import React from 'react';
 import styles from './Contact.module.css';
 import Head from 'next/head';
 import { useState } from 'react';
+import dynamic from 'next/dynamic';
+import useIsMobile from '../../hooks/useIsMobile';
+
 const Contact = () => {
   const [values, setValues] = useState({
     name: '',
@@ -28,26 +31,29 @@ const Contact = () => {
       console.log(err);
     }
   };
+
+  const { isMobile } = useIsMobile();
+
   return (
     <>
       <Head>
         <title>Contact</title>
       </Head>
       <div className={styles.container}>
-        <div className={styles.title}>CONTACT</div>
-        <div className={styles.textContainer}>
-          <div className={styles.left}>
-            <div className={styles.text}>
-              <div>salut@bacosmin.work</div>
-              <div>+40 741 956 599</div>
+        <div className={isMobile ? styles.titleMobile : styles.title}>CONTACT</div>
+        <div className={isMobile ?  styles.textContainerMobile : styles.textContainer}>
+          <div className={isMobile ? styles.leftMobile: styles.left}>
+            <div className={isMobile ? styles.textMobile : styles.text}>
+              <div><a href="">salut@bacosmin.work</a></div>
+              <div><a href="">+40 741 956 599</a></div>
             </div>
-            <div className={styles.divider}></div>
-            <div className={styles.text}>
-              <div>behance.net/andreibcosmin</div>
-              <div>instagram.com/andreicosminb</div>
+            <div className={isMobile ? styles.dividerMobile : styles.divider}></div>
+            <div className={isMobile ? styles.textMobile : styles.text}>
+              <div><a href="">behance.net/andreibcosmin</a></div>
+              <div><a href="">instagram.com/andreicosminb</a></div>
             </div>
           </div>
-          <div className={styles.right}>
+          <div className={isMobile ? styles.rightMobile : styles.right}>
             <form method="post" onSubmit={handleSubmit}>
               <div className={styles.inputWrapper}>
                 <label for="name">Name</label>
@@ -90,4 +96,6 @@ const Contact = () => {
   );
 };
 
-export default Contact;
+export default dynamic(() => Promise.resolve(Contact), {
+  ssr: false,
+});
