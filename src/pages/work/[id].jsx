@@ -127,7 +127,7 @@ const WorkDetail = () => {
         speed={400}
       >
         {project &&
-          Array.from({ length: 6 }).map((item, index) => (
+          Array.from({ length: 10 }).map((item, index) => (
             <div
               style={{
                 flexWrap: 'nowrap',

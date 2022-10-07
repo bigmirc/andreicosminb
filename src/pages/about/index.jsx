@@ -30,7 +30,7 @@ const About = () => {
               and editorial design.
             </div>
           </div>
-          <div
+          {/* <div
             className={isMobile ? styles.cosminachoMobile : styles.cosminacho}
           >
             <Image
@@ -40,7 +40,7 @@ const About = () => {
               layout="responsive"
               alt="cosminacho"
             />
-          </div>
+          </div> */}
         </div>
       </div>
     </>
