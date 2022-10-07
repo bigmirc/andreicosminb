@@ -27,6 +27,10 @@
   width: 100%;
 }
 
+.topMobile {
+  flex-direction: column;
+}
+
 .bottom {
   justify-content: space-between;
 }

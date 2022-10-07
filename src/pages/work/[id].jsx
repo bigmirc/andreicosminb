@@ -4,11 +4,16 @@ import { useRouter } from 'next/router';
 import React, { useEffect, useState } from 'react';
 import projects from '../../utils/projects';
 import styles from './work.module.css';
+import Carousel from 'react-simply-carousel';
+import useIsMobile from '../../hooks/useIsMobile';
+import dynamic from 'next/dynamic';
 
 const WorkDetail = () => {
   const router = useRouter();
+  const { isMobile } = useIsMobile();
   const { id } = router.query;
   const [project, setProject] = useState({});
+  const [activeSlide, setActiveSlide] = useState(0);
 
   useEffect(() => {
     if (!id) {
@@ -30,7 +35,7 @@ const WorkDetail = () => {
           height={980}
         ></Image>
         <div className={styles.projectDetailContainer}>
-          <div className={styles.top}>
+          <div className={isMobile ? styles.topMobile : styles.top}>
             <p className={styles.projectName}>{project?.name}</p>
             <p>{project?.description}</p>
           </div>
@@ -49,9 +54,102 @@ const WorkDetail = () => {
             </div>
           </div>
         </div>
+        <div></div>
       </div>
+      <Carousel
+        containerProps={{
+          style: {
+            width: '100%',
+            justifyContent: 'space-around',
+            userSelect: 'text',
+          },
+        }}
+        activeSlideIndex={activeSlide}
+        // activeSlideProps={{
+        //   style: {
+        //     background: 'blue',
+        //   },
+        // }}
+        onRequestChange={setActiveSlide}
+        forwardBtnProps={{
+          children: '>',
+          style: {
+            backgroundColor: '#C9C9C9',
+            border: 'none',
+            borderRadius: '50%',
+            color: 'white',
+            width: 60,
+            height: 60,
+            alignSelf: 'center',
+            opacity: 0.5,
+            fontSize: 32,
+            margin: '12px 0',
+          },
+        }}
+        backwardBtnProps={{
+          children: '<',
+          style: {
+            backgroundColor: '#C9C9C9',
+            border: 'none',
+            borderRadius: '50%',
+            color: 'white',
+            width: 60,
+            height: 60,
+            alignSelf: 'center',
+            opacity: 0.5,
+            fontSize: 32,
+            margin: '12px 0',
+          },
+        }}
+        dotsNav={{
+          show: true,
+          itemBtnProps: {
+            style: {
+              margin: '24px 4px',
+              height: 16,
+              width: 16,
+              borderRadius: '50%',
+              border: 0,
+            },
+          },
+          activeItemBtnProps: {
+            style: {
+              margin: '24px 4px',
+              height: 16,
+              width: 16,
+              borderRadius: '50%',
+              border: 0,
+              background: '#C4FF00',
+            },
+          },
+        }}
+        itemsToShow={1}
+        speed={400}
+      >
+        {project &&
+          Array.from({ length: 6 }).map((item, index) => (
+            <div
+              style={{
+                flexWrap: 'nowrap',
+                width: isMobile ? 360 : 1000,
+              }}
+              key={index}
+            >
+              <Image
+                src={`/images/${project?.name}/${index}.jpg`}
+                layout="responsive"
+                alt={project.name}
+                key={index}
+                width={1280}
+                height={720}
+              ></Image>
+            </div>
+          ))}
+      </Carousel>
     </>
   );
 };
 
-export default WorkDetail;
+export default dynamic(() => Promise.resolve(WorkDetail), {
+  ssr: false,
+});
