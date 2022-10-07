@@ -44,14 +44,14 @@ const Contact = () => {
         <div className={isMobile ?  styles.textContainerMobile : styles.textContainer}>
           <div className={isMobile ? styles.leftMobile: styles.left}>
             <div className={isMobile ? styles.textMobile : styles.text}>
-              <div><a href="">salut@bacosmin.work</a></div>
-              <div><a href="">+40 741 956 599</a></div>
+              <div><a href="https://www.behance.net/andreibcosmin" target="_blank" className={isMobile ? styles.buttonStyleMobile : styles.buttonStyle}>BEHANCE</a></div>
             </div>
             <div className={isMobile ? styles.dividerMobile : styles.divider}></div>
             <div className={isMobile ? styles.textMobile : styles.text}>
-              <div><a href="">behance.net/andreibcosmin</a></div>
-              <div><a href="">instagram.com/andreicosminb</a></div>
+              <div><a href="https://www.instagram.com/andreicosminb" target="_blank" className={isMobile ? styles.buttonStyleMobile : styles.buttonStyle}>INSTAGRAM</a></div>
             </div>
+
+            
           </div>
           <div className={isMobile ? styles.rightMobile : styles.right}>
             <form method="post" onSubmit={handleSubmit}>
@@ -86,7 +86,7 @@ const Contact = () => {
                 />
               </div>
               <div className={styles.button}>
-                <button>Send</button>
+                <button className={styles.buttonStyle}>Send</button>
               </div>
             </form>
           </div>
