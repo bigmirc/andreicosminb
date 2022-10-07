@@ -35,6 +35,11 @@
   margin-top: 30px;
 }
 
+.leftMobile{
+  width: 90%;
+  padding-bottom: 50px;
+}
+
 .container {
   min-height: 100vh;
   background: var(--black);

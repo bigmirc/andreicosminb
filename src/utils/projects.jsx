@@ -10,11 +10,12 @@ const projects = [
   },
   {
     id: '1',
-    year: 2012,
+    year: 2021,
     kind: 'Open Call',
     name: 'Castelul de Apă',
     type: 'Branding',
-    description: '',
+    description:
+      'Another brief was for Castelul de Apă, an iconic monument of Drobeta Turnu Severin. It was recently transferred into a museum hub with an interface appropriate to the creative sectors where we had to participate in an open call of unique solutions. My idea was to use abstract water shapes to create a dynamic and authentic visual identity. For that, I used a modern and timeless sans-serif typeface to represent the creative environment of Castelul de Apă. Moreover, the impact of this project was given by the colours and gradients used to reflect the water waves.',
   },
   {
     id: '2',
