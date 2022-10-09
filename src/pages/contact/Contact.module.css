@@ -41,14 +41,25 @@
   width: 100%;
   min-height: 100vh;
   background: var(--black);
-  padding: 0 32px;
+  padding-left:32px;
   display: flex;
   flex-direction: column;
   justify-content: space-around;
 }
 
+.containerMobile {
+  width: 100%;
+  min-height: 100vh;
+  background: var(--black);
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+}
+  
 .textContainer {
   display: flex;
+  justify-content: space-around;
+  padding-right: 64px;
 }
 
 .textContainerMobile {
@@ -117,13 +128,18 @@
 
 .title,
 .titleMobile {
-  font-size: 186px;
+  font-size: 160px;
   color: var(--green);
+}
+
+.title{
+  padding-top: 20px;
 }
 
 .titleMobile {
   margin-top: 100px;
   font-size: 72px;
+  padding-left: 20px;
 }
 
 .text a {
