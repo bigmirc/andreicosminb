@@ -39,6 +39,10 @@
   width: 100%;
 }
 
+.top {
+  gap: 48px;
+}
+
 .topMobile {
   flex-direction: column;
 }
@@ -47,6 +51,16 @@
   justify-content: space-between;
 }
 
+.bottomMobile {
+  flex-direction: column;
+}
+
 .detailBoxTitle {
   font-weight: bold;
+  font-size: 24px;
+}
+
+.description,
+.descriptionMobile {
+  font-size: 24px;
 }

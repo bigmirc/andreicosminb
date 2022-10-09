@@ -37,9 +37,15 @@ const WorkDetail = () => {
         <div className={styles.projectDetailContainer}>
           <div className={isMobile ? styles.topMobile : styles.top}>
             <p className={styles.projectName}>{project?.name}</p>
-            <p>{project?.description}</p>
+            <p
+              className={
+                isMobile ? styles.descriptionMobile : styles.description
+              }
+            >
+              {project?.description}
+            </p>
           </div>
-          <div className={styles.bottom}>
+          <div className={isMobile ? styles.bottomMobile : styles.bottom}>
             <div className={styles.detailBox}>
               <p className={styles.detailBoxTitle}>Area</p>
               <p>{project?.type}</p>

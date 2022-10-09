@@ -22,7 +22,7 @@ const About = () => {
             Hello! My name is Cosmin and I am a graphic designer based in Bucharest, Romania. I studied Graphic Design at National University of Arts in Bucharest and I currently work a full time job as a designer at Ivatherm. Before that I was a freelancer for a year.
             </div>
             <div className={styles.p}>
-            I specialize in type design, branding, user interface design and editorial design.
+            I am specialized in type design, branding, user interface design and editorial design.
             </div>
           </div>
           <div
