@@ -40,18 +40,46 @@ const Contact = () => {
         <title>Contact</title>
       </Head>
       <div className={styles.container}>
-        <div className={isMobile ? styles.titleMobile : styles.title}>CONTACT</div>
-        <div className={isMobile ?  styles.textContainerMobile : styles.textContainer}>
-          <div className={isMobile ? styles.leftMobile: styles.left}>
+        <div className={isMobile ? styles.titleMobile : styles.title}>
+          CONTACT
+        </div>
+        <div
+          className={
+            isMobile ? styles.textContainerMobile : styles.textContainer
+          }
+        >
+          <div className={isMobile ? styles.leftMobile : styles.left}>
             <div className={isMobile ? styles.textMobile : styles.text}>
-              <div><a href="https://www.behance.net/andreibcosmin" target="_blank" className={isMobile ? styles.buttonStyleMobile : styles.buttonStyle}>BEHANCE</a></div>
+              <div>
+                <a
+                  href="https://www.behance.net/andreibcosmin"
+                  target="_blank"
+                  className={
+                    isMobile ? styles.buttonStyleMobile : styles.buttonStyle
+                  }
+                  rel="noreferrer"
+                >
+                  BEHANCE
+                </a>
+              </div>
             </div>
-            <div className={isMobile ? styles.dividerMobile : styles.divider}></div>
+            <div
+              className={isMobile ? styles.dividerMobile : styles.divider}
+            ></div>
             <div className={isMobile ? styles.textMobile : styles.text}>
-              <div><a href="https://www.instagram.com/andreicosminb" target="_blank" className={isMobile ? styles.buttonStyleMobile : styles.buttonStyle}>INSTAGRAM</a></div>
+              <div>
+                <a
+                  href="https://www.instagram.com/andreicosminb"
+                  target="_blank"
+                  className={
+                    isMobile ? styles.buttonStyleMobile : styles.buttonStyle
+                  }
+                  rel="noreferrer"
+                >
+                  INSTAGRAM
+                </a>
+              </div>
             </div>
-
-            
           </div>
           <div className={isMobile ? styles.rightMobile : styles.right}>
             <form method="post" onSubmit={handleSubmit}>
