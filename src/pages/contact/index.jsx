@@ -1,36 +1,23 @@
-import React from 'react';
+import React, { useRef } from 'react';
 import styles from './Contact.module.css';
 import Head from 'next/head';
-import { useState } from 'react';
+import emailjs from '@emailjs/browser'
 import dynamic from 'next/dynamic';
 import useIsMobile from '../../hooks/useIsMobile';
 
 const Contact = () => {
-  const [values, setValues] = useState({
-    name: '',
-    email: '',
-    message: '',
-  });
+  const form = useRef();
 
-  const { name, email, message } = values;
-
-  const handleChange = (e) =>
-    setValues({ ...values, [e.target.name]: e.target.value });
-
-  const handleSubmit = async (e) => {
-    e.preventDefault();
-    try {
-      await fetch('http://localhost:3000/api/contact', {
-        method: 'POST',
-        headers: {
-          'Content-Type': 'application/json',
-        },
-        body: JSON.stringify(values),
-      });
-    } catch (err) {
-      console.log(err);
-    }
-  };
+	const sendEmail = (e) => {
+		e.preventDefault();
+		emailjs.sendForm('service_8ukg5ph', 'cosminacho', form.current, 'ugkh4Czr8yXrX1yqr')
+			.then((result) => {
+				console.log(result.text);
+        console.log('message sent')
+			}, (error) => {
+				console.log(error.text);
+			});
+	};
 
   const { isMobile } = useIsMobile();
 
@@ -39,7 +26,7 @@ const Contact = () => {
       <Head>
         <title>Contact</title>
       </Head>
-      <div className={styles.container}>
+      <div className={isMobile ? styles.containerMobile : styles.container}>
         <div className={isMobile ? styles.titleMobile : styles.title}>
           CONTACT
         </div>
@@ -82,39 +69,31 @@ const Contact = () => {
             </div>
           </div>
           <div className={isMobile ? styles.rightMobile : styles.right}>
-            <form method="post" onSubmit={handleSubmit}>
+            <form ref={form}  onSubmit={sendEmail}>
               <div className={styles.inputWrapper}>
                 <label for="name">Name</label>
                 <input
                   className={styles.input}
-                  type="text"
-                  value={name}
-                  id="name"
-                  name="name"
-                  onChange={handleChange}
+                  placeholder="name" type="text" name="user_name"
                 />
               </div>
               <div className={styles.inputWrapper}>
                 <label for="email">Email</label>
                 <input
                   className={styles.input}
-                  type="text"
-                  value={email}
-                  id="email"
-                  name="email"
-                  onChange={handleChange}
+                  placeholder="email" type="email" name="user_email"
                 />
               </div>
               <div className={styles.textareaWrapper}>
                 <label>Cute Message</label>
                 <textarea
-                  value={message}
-                  onChange={handleChange}
                   name="message"
+                  placeholder='message'
                 />
               </div>
               <div className={styles.button}>
-                <button className={styles.buttonStyle}>Send</button>
+                {/* <button className={styles.buttonStyle}>Send</button> */}
+                <input className={styles.buttonStyle} type="submit" value="Send"/>
               </div>
             </form>
           </div>

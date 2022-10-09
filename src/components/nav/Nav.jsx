@@ -32,7 +32,7 @@ const Nav = () => {
       {links.map((link, i) => (
         <Link key={i} href={link.url}>
           <div
-            className={`${style.link} ${
+            className={`${isMobile ? style.linkMobile : style.link} ${
               router.pathname === link.url ? style.linkActive : ''
             }`}
           >

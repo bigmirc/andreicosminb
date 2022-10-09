@@ -17,30 +17,25 @@ const About = () => {
           ABOUT
         </div>
         <div className={isMobile ? styles.wrapperMobile : styles.wrapper}>
-          <div className={styles.pwrapper}>
+          <div className={isMobile ?  styles.pwrapperMobile: styles.pwrapper}>
             <div className={styles.p}>
-              Hello! My name is Cosmin and I am a curious graphic designer based
-              in Bucharest, Romania. I studied Graphic Design at National
-              University of Arts in Bucharest and I currently work a full time
-              job as a designer at Ivatherm. Before that I was a freelancer for
-              a almost a year.
+            Hello! My name is Cosmin and I am a graphic designer based in Bucharest, Romania. I studied Graphic Design at National University of Arts in Bucharest and I currently work a full time job as a designer at Ivatherm. Before that I was a freelancer for a year.
             </div>
             <div className={styles.p}>
-              I am interested in type design, branding, user interface design
-              and editorial design.
+            I specialize in type design, branding, user interface design and editorial design.
             </div>
           </div>
-          {/* <div
+          <div
             className={isMobile ? styles.cosminachoMobile : styles.cosminacho}
           >
             <Image
-              src={'/images/cosminacho.jpeg'}
-              width="300px"
-              height="300px"
+              src={'/images/cosminacho.svg'}
+              width="600px"
+              height="600px"
               layout="responsive"
               alt="cosminacho"
             />
-          </div> */}
+          </div>
         </div>
       </div>
     </>
