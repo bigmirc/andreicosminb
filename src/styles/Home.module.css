@@ -6,7 +6,6 @@
   flex-direction: column;
   justify-content: center;
   overflow: hidden;
-  padding-left: 5%;
 }
 
 .container {
@@ -18,31 +17,6 @@
   align-items: flex-start;
   gap: 8px;
 }
-
-.andrei,
-.cosmin,
-.bala,
-.graphic,
-.designer {
-  transition: transform 0.2s;
-}
-
-
-/* .andrei:hover {
-  transform: scale(1.02);
-}
-.cosmin:hover {
-  transform: scale(1.42);
-}
-.bala:hover {
-  transform: scale(2.3);
-}
-.graphic:hover {
-  transform: scale(1.92);
-}
-.designer:hover {
-  transform: scale(1.02);
-} */
 
 .andrei {
   margin-left: 1%;

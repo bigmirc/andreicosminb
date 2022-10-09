@@ -26,10 +26,10 @@ const Contact = () => {
       <Head>
         <title>Contact</title>
       </Head>
-      <div className={isMobile ? styles.containerMobile : styles.container}>
-        <div className={isMobile ? styles.titleMobile : styles.title}>
+      <div className={isMobile ? styles.titleMobile : styles.title}>
           CONTACT
         </div>
+      <div className={isMobile ? styles.containerMobile : styles.container}>
         <div
           className={
             isMobile ? styles.textContainerMobile : styles.textContainer
