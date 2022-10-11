@@ -148,6 +148,7 @@ const WorkDetail = () => {
                 key={index}
                 width={1280}
                 height={720}
+                loading="lazy"
               ></Image>
             </div>
           ))}
