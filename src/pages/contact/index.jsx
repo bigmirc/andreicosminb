@@ -1,23 +1,32 @@
 import React, { useRef } from 'react';
 import styles from './Contact.module.css';
 import Head from 'next/head';
-import emailjs from '@emailjs/browser'
+import emailjs from '@emailjs/browser';
 import dynamic from 'next/dynamic';
 import useIsMobile from '../../hooks/useIsMobile';
 
 const Contact = () => {
   const form = useRef();
 
-	const sendEmail = (e) => {
-		e.preventDefault();
-		emailjs.sendForm('service_8ukg5ph', 'cosminacho', form.current, 'ugkh4Czr8yXrX1yqr')
-			.then((result) => {
-				console.log(result.text);
-        console.log('message sent')
-			}, (error) => {
-				console.log(error.text);
-			});
-	};
+  const sendEmail = (e) => {
+    e.preventDefault();
+    emailjs
+      .sendForm(
+        'service_8ukg5ph',
+        'cosminacho',
+        form.current,
+        'ugkh4Czr8yXrX1yqr'
+      )
+      .then(
+        (result) => {
+          console.log(result.text);
+          console.log('message sent');
+        },
+        (error) => {
+          console.log(error.text);
+        }
+      );
+  };
 
   const { isMobile } = useIsMobile();
 
@@ -27,8 +36,8 @@ const Contact = () => {
         <title>Contact</title>
       </Head>
       <div className={isMobile ? styles.titleMobile : styles.title}>
-          CONTACT
-        </div>
+        CONTACT
+      </div>
       <div className={isMobile ? styles.containerMobile : styles.container}>
         <div
           className={
@@ -69,31 +78,36 @@ const Contact = () => {
             </div>
           </div>
           <div className={isMobile ? styles.rightMobile : styles.right}>
-            <form ref={form}  onSubmit={sendEmail}>
+            <form ref={form} onSubmit={sendEmail}>
               <div className={styles.inputWrapper}>
                 <label for="name">Name</label>
                 <input
                   className={styles.input}
-                  placeholder="name" type="text" name="user_name"
+                  placeholder="name"
+                  type="text"
+                  name="user_name"
                 />
               </div>
               <div className={styles.inputWrapper}>
                 <label for="email">Email</label>
                 <input
                   className={styles.input}
-                  placeholder="email" type="email" name="user_email"
+                  placeholder="email"
+                  type="email"
+                  name="user_email"
                 />
               </div>
               <div className={styles.textareaWrapper}>
                 <label>Cute Message</label>
-                <textarea
-                  name="message"
-                  placeholder='message'
-                />
+                <textarea name="message" placeholder="message" />
               </div>
               <div className={styles.button}>
                 {/* <button className={styles.buttonStyle}>Send</button> */}
-                <input className={styles.buttonStyle} type="submit" value="Send"/>
+                <input
+                  className={styles.buttonStyle}
+                  type="submit"
+                  value="Send"
+                />
               </div>
             </form>
           </div>

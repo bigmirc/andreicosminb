@@ -18,24 +18,94 @@
   gap: 8px;
 }
 
+@keyframes slide-left-1 {
+  from {
+    transform: translateX(-600px);
+  }
+  to {
+    transform: translateX(0);
+  }
+}
+
+@keyframes slide-right-1 {
+  from {
+    transform: translateX(600px);
+  }
+  to {
+    transform: translateX(0);
+  }
+}
+
+@keyframes slide-left-2 {
+  from {
+    transform: translateX(-900px);
+  }
+  to {
+    transform: translateX(0);
+  }
+}
+
+@keyframes slide-right-2 {
+  from {
+    transform: translateX(900px);
+  }
+  to {
+    transform: translateX(0);
+  }
+}
+
+@keyframes slide-left-3 {
+  from {
+    transform: translateX(-1300px);
+  }
+  to {
+    transform: translateX(0);
+  }
+}
+
 .andrei {
   margin-left: 1%;
+  animation: slide-left-1 2s;
 }
 
 .cosmin {
   margin-left: 15%;
+  animation: slide-left-2 2s;
 }
 
 .bala {
   align-self: center;
+  animation: slide-left-3 2s;
 }
 
 .graphic {
   align-self: flex-end;
   margin-right: 18%;
+  animation: slide-right-2 2s;
 }
 
 .designer {
   align-self: flex-end;
   margin-right: 1%;
+  animation: slide-right-1 2s;
+}
+
+.andreiMobile {
+  animation: slide-left-1 2s;
+}
+
+.cosminMobile {
+  animation: slide-left-2 2s;
+}
+
+.balaMobile {
+  animation: slide-left-3 2s;
+}
+
+.graphicMobile {
+  animation: slide-right-2 2s;
+}
+
+.designerMobile {
+  animation: slide-right-1 2s;
 }

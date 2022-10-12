@@ -12,7 +12,9 @@ export function Home() {
         <meta name="viewport" content="initial-scale=1.0, width=device-width" />
       </Head>
       <div className={isMobile ? styles.containerMobile : styles.container}>
-        <div className={styles.andrei}>Andrei</div>
+        <div className={isMobile ? styles.andreiMobile : styles.andrei}>
+          Andrei
+        </div>
         <div className={isMobile ? styles.cosminMobile : styles.cosmin}>
           Cosmin
         </div>
