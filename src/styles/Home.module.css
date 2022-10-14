@@ -9,13 +9,15 @@
 }
 
 .container {
-  font-size: 140px;
+  font-size: 160px;
+  line-height: 130px;
 }
 
 .containerMobile {
   font-size: 76px;
   align-items: flex-start;
   gap: 8px;
+  padding-left: 8px;
 }
 
 @keyframes slide-left-1 {
@@ -65,47 +67,47 @@
 
 .andrei {
   margin-left: 1%;
-  animation: slide-left-1 2s;
+  animation: slide-left-1 1.5s;
 }
 
 .cosmin {
   margin-left: 15%;
-  animation: slide-left-2 2s;
+  animation: slide-left-2 1.5s;
 }
 
 .bala {
-  align-self: center;
-  animation: slide-left-3 2s;
+  margin-left: 30%;
+  animation: slide-left-3 1.5s;
 }
 
 .graphic {
   align-self: flex-end;
-  margin-right: 18%;
-  animation: slide-right-2 2s;
+  margin-right: 15%;
+  animation: slide-right-2 1.5s;
 }
 
 .designer {
   align-self: flex-end;
   margin-right: 1%;
-  animation: slide-right-1 2s;
+  animation: slide-right-1 1.5s;
 }
 
 .andreiMobile {
-  animation: slide-left-1 2s;
+  animation: slide-left-1 1.5s;
 }
 
 .cosminMobile {
-  animation: slide-left-2 2s;
+  animation: slide-left-2 1.5s;
 }
 
 .balaMobile {
-  animation: slide-left-3 2s;
+  animation: slide-left-3 1.5s;
 }
 
 .graphicMobile {
-  animation: slide-right-2 2s;
+  animation: slide-right-2 1.5s;
 }
 
 .designerMobile {
-  animation: slide-right-1 2s;
+  animation: slide-right-1 1.5s;
 }

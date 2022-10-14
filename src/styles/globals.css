@@ -8,12 +8,12 @@ body {
 @font-face {
   font-family: 'Telegraf';
   src: local('Telegraf Regular'), local('Telegraf-Regular'),
-  url('../assets/fonts/Telegraf-Regular.woff') format('truetype');
+    url('../assets/fonts/DarkerGrotesque-Regular.woff') format('truetype');
   font-display: swap;
 }
 :root {
-  --gray: #C9C9C9;
-  --green: #C4FF00;
-  --black: #0E0E0E;
+  --gray: #c9c9c9;
+  --green: #c4ff00;
+  --black: #0e0e0e;
   --white: #fff;
 }

@@ -9,7 +9,6 @@
 
 .left {
   width: 45vw;
-  height: 60vh;
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -19,14 +18,13 @@
 .buttonStyleMobile {
   text-decoration: none;
   font-size: 24px;
-  color: var(--black);
-  border-radius: 26px;
   border: 1px solid white;
-  padding: 40px 64px 32px;
+  padding: 12px 20px 16px 20px;
 }
 
 .buttonStyleMobile {
-  padding: 20px 32px 16px;
+  border-radius: 50px;
+  padding: 20px 32px;
 }
 
 .leftMobile {
@@ -136,10 +134,10 @@
 }
 
 .text a {
-  line-height: 40px;
   color: var(--white);
   font-size: 32px;
   text-decoration: none;
+  border-radius: 50px;
 }
 
 .text {

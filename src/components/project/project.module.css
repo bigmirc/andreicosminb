@@ -2,7 +2,6 @@
   flex: 40%;
   padding: 24px 24px 40px;
   color: white;
-  margin-bottom: 48px;
 }
 
 .divider {
@@ -23,8 +22,14 @@
 .projectButton {
   text-decoration: none;
   font-size: 24px;
+  line-height: 24px;
   color: white;
   border-radius: 26px;
   border: 1px solid white;
-  padding: 10px 16px 8px;
+  width: 144px;
+  height: 48px;
+  padding-bottom: 4px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }

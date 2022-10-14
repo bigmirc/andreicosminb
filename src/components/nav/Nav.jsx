@@ -8,29 +8,33 @@ import dynamic from 'next/dynamic';
 const links = [
   {
     url: '/',
-    label: 'Home',
+    label: 'HOME',
   },
   {
     url: '/about',
-    label: 'About',
+    label: 'ABOUT',
   },
   {
     url: '/work',
-    label: 'Work',
+    label: 'WORK',
   },
   {
     url: '/contact',
-    label: 'Contact',
+    label: 'CONTACT',
   },
 ];
 
-const Nav = () => {
+const Nav = ({ page }) => {
   const router = useRouter();
   const { isMobile } = useIsMobile();
   return (
     <div className={isMobile ? style.containerMobile : style.container}>
       {links.map((link, i) => (
-        <Link key={i} href={link.url}>
+        <Link
+          className={page === ' home' ? styles.blackText : ''}
+          key={i}
+          href={link.url}
+        >
           <div
             className={`${isMobile ? style.linkMobile : style.link} ${
               router.pathname === link.url ? style.linkActive : ''

@@ -13,6 +13,7 @@
 }
 
 .wrapper {
+  padding: 0 64px;
   margin-top: 32px;
 }
 
@@ -25,8 +26,7 @@
 }
 
 .pwrapper {
-  width: 60vw;
-  padding: 0 64px 64px 64px;
+  width: 45%;
 }
 
 .pwrapperMobile {
@@ -66,9 +66,8 @@
 
 .cosminacho {
   align-self: center;
-  width: 400px;
+  width: 45%;
   height: 400px;
-  margin-right: 64px;
   background: var(--black);
 }
 

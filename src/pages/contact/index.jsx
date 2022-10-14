@@ -63,7 +63,6 @@ const Contact = () => {
               className={isMobile ? styles.dividerMobile : styles.divider}
             ></div>
             <div className={isMobile ? styles.textMobile : styles.text}>
-              <div>
                 <a
                   href="https://www.instagram.com/andreicosminb"
                   target="_blank"
@@ -74,7 +73,6 @@ const Contact = () => {
                 >
                   INSTAGRAM
                 </a>
-              </div>
             </div>
           </div>
           <div className={isMobile ? styles.rightMobile : styles.right}>
