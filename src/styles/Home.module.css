@@ -18,6 +18,7 @@
   align-items: flex-start;
   gap: 8px;
   padding-left: 8px;
+  line-height: 76px;
 }
 
 @keyframes slide-left-1 {
