@@ -1,5 +1,5 @@
 import React, { useRef } from 'react';
-import styles from '../../../../balaurl/src/pages/contact/Contact.module.css';
+import styles from './Contact.module.css';
 import Head from 'next/head';
 import emailjs from '@emailjs/browser';
 import dynamic from 'next/dynamic';
@@ -8,7 +8,7 @@ import useIsMobile from '../../hooks/useIsMobile';
 const Contact = () => {
   const form = useRef();
 
-  const sendEmail = (e) => {
+  const sendEmail = () => {
     emailjs
       .sendForm(
         'service_8ukg5ph',
