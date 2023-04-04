@@ -15,10 +15,12 @@
 .wrapper {
   padding: 0 64px;
   margin-top: 32px;
+  padding-bottom: 20px;
 }
 
 .wrapperMobile {
   flex-direction: column-reverse;
+  padding-bottom: 20px;
 }
 
 .wrapperMobile .p {
@@ -66,7 +68,7 @@
 
 .cosminacho {
   align-self: center;
-  width: 45%;
+  width: 30%;
   height: 400px;
   background: var(--black);
 }

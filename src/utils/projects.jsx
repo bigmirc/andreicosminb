@@ -39,12 +39,14 @@ const projects = [
   },
   {
     id: '4',
-    year: '2019',
-    kind: 'University Project',
-    name: 'Eric Gill Short Book',
-    type: 'Editorial',
+    year: '2022',
+    kind: 'Open Call',
+    name: 'Film Festival Locarno 76',
+    type: 'Visual Identity',
     description:
-      'Everything you need to know about the printmaker, typeface designer and sculptor Eric Gill. A small book that includes informations and images.',
+      'For this edition, I wanted to maintain the visual identity of the festival by using the key visuals, typography and colours that Locarno Film Festival has. \n' +
+        'However, my main focus for the poster design was to incorporate a new and fresh vision which can be noticed in the textures and the usage of type style and design. For Locarno 76 to be accessible and to have a long-lasting online presence I used the #76LOCARNO hashtag.\n' +
+        'At last, I used the idea of Locarno being the world capital of auteur cinema as a significant visual element in creating the animation, poster and mockups. You can also find a new color option to use for Locarno identity this year.',
   },
   {
     id: '5',
